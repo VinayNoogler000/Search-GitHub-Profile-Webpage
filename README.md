@@ -32,8 +32,8 @@ To get a local copy up and running, follow these simple steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/search-github-profile.git
-    cd search-github-profile
+    git clone https://github.com/VinayNoogler000/Search-GitHub-Profile-Webpage.git
+    cd search-github-profile-webpage
     ```
 
 2. **Install dependencies**:
@@ -81,8 +81,8 @@ To get a local copy up and running, follow these simple steps:
 
 ## License 
 
-Distributed under the MIT License. See [LICENSE]() for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/VinayNoogler000/Search-GitHub-Profile-Webpage/blob/main/LICENSE.txt) for more information.
 
 ## Contact
 
-Vinay Tambey - (Portfolio)[https://vinay-tambey-portfolio.b-cdn.net/] - (LinkedIn)[https://www.linkedin.com/in/vinaytambey/]
+Vinay Tambey - [Portfolio](https://vinay-tambey-portfolio.b-cdn.net/) - [LinkedIn](https://www.linkedin.com/in/vinaytambey/)
