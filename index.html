@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Vinay Tambey" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search GitHub Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gradient-to-t from-cyan-500  via-purple-500 to-pink-500 ">
+
+    <main>
+        <h1 class="heading">Search GitHub Profile</h1>
+
+        <form autocomplete="on">
+            <input type="text" name="username" id="username" placeholder="Enter Your GitHub Username..." />
+            <button type="submit"> Search </button>
+        </form>
+
+        <div class="profile-card hidden">
+            <div class="top-part">
+                <div class="user-info">
+                    <img src="https://avatars.githubusercontent.com/u/116747376?v=4" alt="Profile Image"
+                        class="profile-img">
+
+                    <div class="txt-content">
+                        <h3 class="display-name">Vinay Tambey</h3>
+                        <h4 class="user-name">@vinaynoogler000</h4>
+                    </div>
+                </div>
+
+                <a href="https://github.com/VinayNoogler000" id="checkProfileBtn" target="_blank"> <button>Check
+                        Profile</button> </a>
+            </div>
+
+            <div class="about flex flex-col gap-1">
+                <p>About</p>
+                <p id="userBio">Hi, I am a SDE Student, skilled in React, JS, Tailwind, HTML, CSS, Java, DSA, CLI &
+                    Git. I am learning MERN and looking for Frontend Developer Jobs.</p>
+            </div>
+
+            <div class="status flex justify-between items-center gap-2">
+                <div class="status-items">
+                    <p>Followers</p>
+                    <p id="followersCount">113</p>
+                </div>
+
+                <div class="status-items">
+                    <p>Following</p>
+                    <p id="followingCount">110</p>
+                </div>
+
+                <div class="status-items">
+                    <p>Repositories</p>
+                    <p id="reposCount">15</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="invalid-username hidden"> &#9888; UserName Not Found!</p>
+    </main>
+
+    <!-- Script Tag -->
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- Axios Library Script -->
+</body>
+
+</html>

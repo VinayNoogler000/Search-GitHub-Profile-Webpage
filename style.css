@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+    * {
+        @apply m-0 p-0 border-0 box-border;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    .heading {
+        @apply text-8xl font-bold;
+    }
+
+
+    /* RESPONSIVENESS */
+    @media(max-width:768px) {
+        html {
+            font-size: 50%;
+        }
+    }
+
+    @media(max-width:640px) {
+        html {
+            font-size: 40%;
+        }
+    }
+
+    @media(max-width:500px) {
+        html {
+            font-size: 30%;
+        }
+    }
+}
+
+@layer components {
+    main {
+        @apply max-w-6xl h-screen m-auto flex flex-col justify-center items-center gap-10;
+    }
+
+
+    /* Form Elements Styling */
+    form {
+        @apply w-full flex justify-center items-center gap-3;
+    }
+
+    form input {
+        @apply w-96 px-5 py-[0.7rem] text-2xl border-2 border-gray-500 rounded-xl cursor-text;
+    }
+
+    form button,
+    #checkProfileBtn {
+        @apply bg-gray-500 px-5 py-[0.7rem] text-2xl font-semibold border-2 border-black bg-gradient-to-r from-teal-400 to-blue-500 rounded-xl text-white transition ease-in-out duration-500;
+    }
+
+    form button:hover,
+    #checkProfileBtn:hover {
+        @apply bg-gradient-to-r from-pink-500 to-orange-500;
+    }
+
+
+    /* In-Valid-UserName-Error Styling */
+    .invalid-username {
+        background-color: rgba(235, 89, 89, 0.61);
+        @apply p-8 rounded-3xl text-4xl font-semibold text-white mt-6;
+    }
+
+
+    /* GitHub Profile Card Styling */
+    .profile-card {
+        @apply w-11/12 px-8 py-12 rounded-2xl shadow-[0.2rem_0.2rem_2.5rem_rgba(0,0,0,0.5)] mt-10 bg-white flex flex-col gap-10 transition ease-in-out duration-300;
+    }
+
+    .profile-card .top-part {
+        @apply flex justify-between items-center gap-4;
+    }
+
+    .profile-card .user-info {
+        @apply flex justify-center items-center gap-3;
+    }
+
+    .profile-card .profile-img {
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+    }
+
+    .profile-card .txt-content {
+        @apply flex flex-col gap-1;
+    }
+
+    .profile-card .txt-content h3,
+    .about {
+        @apply font-bold text-4xl;
+    }
+
+    .profile-card .txt-content h4 {
+        @apply text-2xl text-gray-600;
+    }
+
+    #checkProfileBtn {
+        @apply self-start;
+    }
+
+    #userBio {
+        @apply text-2xl font-medium;
+    }
+
+    .status-items {
+        @apply font-bold text-4xl flex flex-col items-center justify-center;
+    }
+
+    #followersCount,
+    #followingCount,
+    #reposCount {
+        @apply text-3xl font-medium;
+    }
+
+    .profile-card:hover {
+        transform: scale(1.05);
+        @apply shadow-[0.5rem_0.5rem_3.5rem_rgba(0,0,0,0.5)];
+    }
+}
