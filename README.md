@@ -24,7 +24,7 @@ Welcome to the **Search GitHub Profile** project! This web application allows us
 
 ## Demo
 
-Check out the live demo of the application [here](https://search--github--profile--by--vt.b-cdn.net/).
+Check out the live demo of the application [here](https://search-github-profile-vt.vercel.app/).
 
 ## Installation
 
